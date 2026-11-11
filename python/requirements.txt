@@ -1,0 +1,8 @@
+# Extra Python packages installed by App Lab into the app's virtual environment.
+# PyAV bundles its own FFmpeg build, so it can decode MP3, AAC and HLS streams
+# without any system packages. Prebuilt aarch64 wheels are published on PyPI.
+av
+numpy
+# pyalsaaudio is NOT listed: it is already provided by the Arduino App Lab
+# runtime (the built-in Speaker peripheral depends on it) and there is no
+# compiler in the app container to build it from source.
